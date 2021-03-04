@@ -38,13 +38,13 @@ public class IOStream {
         System.out.println("\t1. Get Polynomials");
         System.out.println("\t2. Add Polynomials.");
         System.out.println("\t3. Display Result");
-        System.out.println("\t3. Reset Polynomials");
+        System.out.println("\t4. Reset Polynomials");
         System.out.println("\t\t Press any other key to exit");
         System.out.print("\n\tPlease Enter your choice:\t");
     }
 
     public static void displayResults(Polynomial expression) {
-        System.out.println("\n\n");
+        System.out.println("\n");
         for (int i = 0; i < expression.getCounter(); i++) {
             AlgebraicTerm term = expression.getTerm(i);
             if (i > 0 && term.coefficient > 0) {
@@ -53,7 +53,7 @@ public class IOStream {
             printTerm(term);
             System.out.print("\t");
         }
-        System.out.println("\n\n");
+        System.out.println("\n");
     }
 
     public static void printTerm(AlgebraicTerm term) {

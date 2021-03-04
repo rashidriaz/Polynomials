@@ -61,4 +61,9 @@ public class Polynomial {
         return new AlgebraicTerm(coefficient,
                 term1.variable, term1.exponent);
     }
+
+    public void reset(){
+        polynomial = new AlgebraicTerm[polynomialSize];
+        counter = 0;
+    }
 }
